@@ -1,123 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
+
 <head>
-  <script src="https://kit.fontawesome.com/12ae857da9.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="styles.css" />
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  resize: vertical;
-}
-
-label {
-  padding: 12px 12px 12px 0;
-  display: inline-block;
-}
-
-input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  float: right;
-}
-
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-.container {
-  border-radius: 5px;
-  padding: 20px;
-}
-
-.col-25 {
-  float: left;
-  width: 25%;
-  margin-top: 6px;
-}
-
-.col-75 {
-  float: left;
-  width: 75%;
-  margin-top: 6px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .col-25, .col-75, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-  }
-}
-</style>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="Register.css" />
+<link href="https://fonts.googleapis.com/css?family=IM+Fell+Double+Pica:400,400i&display=swap" rel="stylesheet">
+  <title>Register</title>
 </head>
+
 <body>
+  <!--- php --->
+    <main>
 
-<h2>Register</h2>
-<b><p>Please reserve your seat for this event as space is limited</p></b>
 
-<div class="container">
-  <form action="form-to-email.php" method="post" enctype="text/plain">
-    <div class="row">
-      <div class="col-25">
-        <label class="firstname" for="fname">First Name</label>
-      </div>
-      <div class="col-25">
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-25">
-        <label class="lastname" for="lname">Last Name</label>
-      </div>
-      <div class="col-25">
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-25">
-        <label type="Email" class="email" for="email">Email</label>
-      </div>
-      <div class="col-25">
-        <input type="text" id="email" name="email" placeholder="Your email..">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-25">
-        <label class="info" for="subject">Additional Information</label>
-      </div>
-      <div class="col-25">
-        <textarea id="subject" name="subject" placeholder="Please include any additional guests that will be attending with you."
-                  style="height:200px"></textarea>
-
-  </form>
+  <div class="contact-form" method= "post" action="register1.php">
+    <h1>Contact Us</h1>
+  <div class="txtb">
+    <label>Full Name: </label>
+      <input type="text" name="" value="" placeholder="Enter Your Name" required >
 </div>
 
 
-<a href="Thankyou.html" class="Submit">Submit</a>
+<div class="txtb">
+  <label>Email: </label>
+    <input type="email" name="" value="" placeholder="Enter Your Email" Send="Esh49961@yahoo.com" required >
+</div>
 
 
+<div class="txtb">
+  <label>Payment Confirmation: </label>
+    <input type="text" name="" value="" placeholder="Enter The Payment Confirmation" >
+</div>
 
 
+<div class= "txtb">
+  <label> Additional Information</label>
+<input type="text" name="" value="" placeholder="Enter Additional Information and Request (ex: Allergies)" required>
+  <textarea></textarea>
+</div>
 
-
+<a href="file:///C:/Users/Ember/Desktop/Web%20Development/Brunch/Thankyou.html" class= "btn">Send</a>
+</div>
+</main>
 </body>
 </html>
